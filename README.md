@@ -95,6 +95,7 @@ Calcolare e stampare la media dei valori.
 a ogni iterazione controllo gli elementi adiacenti (n e n+1) per tutta la lunghezza dell'array e se non sono in ordine li scambio. l'algoritmo termina quando non si verificheranno più scambi.
 
 pseudocodice: 
+```
 algoritmo bubble sort (array[0...n-1])
 i <- 1
 DO
@@ -105,7 +106,8 @@ DO
       scambiato <- true
   i<-i+1
 WHILE scambiato and i<n
- 
+```
+
 #cfr = n-1 per n-1 volte -> O(n^2)
 spazio = O(1)
 
