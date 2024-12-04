@@ -1,6 +1,7 @@
 # cpp-algorithm
 - [basic](#basic)
 - [array](#array)
+- [bubble](#bubble)
 
 # basic
 **Esercizio 1: “Hello, World!”**
@@ -87,3 +88,30 @@ Obiettivo: Calcolare la media dei valori di un array.
 Dichiarare un array di 5 interi.
 Chiedere all’utente di inserire i valori nell’array.
 Calcolare e stampare la media dei valori.
+
+# bubble
+
+**Teoria:**
+a ogni iterazione controllo gli elementi adiacenti (n e n+1) per tutta la lunghezza dell'array e se non sono in ordine li scambio. l'algoritmo termina quando non si verificheranno più scambi.
+
+pseudocodice: 
+algoritmo bubble sort (array[0...n-1])
+i <- 1
+DO
+  scambiato <- false
+  FOR j<-1 TO n-i DO
+    IF A[j]<A[j-1] THEN
+      scambia A[j] con A[j-1]
+      scambiato <- true
+  i<-i+1
+WHILE scambiato and i<n
+ 
+#cfr = n-1 per n-1 volte -> O(n^2)
+spazio = O(1)
+
+**Esercizio: Bubble Sort**
+Obiettivo: Ordinare un array di numeri in ordine crescente utilizzando l’algoritmo di ordinamento bubble sort.
+Dichiarare un array di 5 interi.
+Chiedere all’utente di inserire i valori nell’array.
+Ordinare l’array usando il bubble sort.
+ Stampare l’array ordinato.
