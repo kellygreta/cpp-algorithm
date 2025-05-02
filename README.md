@@ -2,6 +2,7 @@
 - [basic](#basic)
 - [array](#array)
 - [bubble](#bubble)
+- [struct](#struct)
 
 # basic
 **Esercizio 1: “Hello, World!”**  <br/>
@@ -11,7 +12,7 @@ Prova a modificare il messaggio in qualcosa di diverso.
 
 **Esercizio 2: Variabili e Tipi di Dati** <br/>
 Obiettivo: Dichiarare variabili e stampare i loro valori. <br/>
-Crea un programma che dichiara due variabili: un numero intero (int), un numero a virgola mobile (float).
+Crea un programma che dichiara due variabili: un numero intero (```int```), un numero a virgola mobile (```float```).
 Assegna valori a queste variabili e stampali sullo schermo.
 
 **Esercizio 3: Operazioni Aritmetiche** <br/>
@@ -121,3 +122,56 @@ Dichiarare un array di 5 interi.
 Chiedere all’utente di inserire i valori nell’array.
 Ordinare l’array usando il bubble sort.
  Stampare l’array ordinato.
+
+# struct
+
+In C++, una ```struct``` (abbreviazione di structure) è un costrutto che permette di raggruppare variabili di diversi tipi sotto un’unica entità. È utile quando si vuole rappresentare un oggetto con più attributi correlati.
+
+Una struct è seguita dal nome della struttura e dalle sue variabili.
+```
+struct NomeStruct {
+    // Definizione delle variabili
+};
+```
+Esempio 
+```
+// Definizione della struttura Studente
+struct Studente {
+    string nome;
+    int eta;
+    float votoMedio;
+
+};
+```
+Per accedere ai valori della struttura si accedono con l’operatore ```.``` (dot operator), ad esempio ```studente.nome```.
+
+**Esercizio 1: Informazioni sugli studenti**<br/>
+Scrivi un programma che:<br/>
+   1.    Legga da tastiera le informazioni di 3 studenti (nome, età, media voti).
+   2.    Salvi queste informazioni in un array di struct.
+   3.    Stampi il nome degli studenti con una media voti superiore a 27 (su 30).
+
+**Esercizio 2: Lista della spesa**<br/>
+Crea una struct chiamata Articolo con i seguenti campi:
+- Nome dell’articolo.
+- Prezzo.
+- Quantità.<br/>
+Scrivi un programma che:
+   1.    Chieda all’utente di inserire i dettagli di 5 articoli.
+   2.    Calcoli il costo totale della spesa.
+   3.    Stampi un riepilogo degli articoli e del costo totale.
+
+**Esercizio 3: Gestione di una libreria**<br/>
+Crea una struct chiamata Libro con i campi:
+- Titolo.
+- Autore.
+- Anno di pubblicazione.<br/>
+Scrivi un programma che:
+   1.    Legga i dettagli di 5 libri da tastiera.
+   2.    Stampi i titoli di tutti i libri pubblicati dopo l’anno 2000.
+
+**Esercizio 4: Trova il prodotto più costoso**<br/>
+Utilizza la struct Prodotto e scrivi un programma che:
+   1.    Legga i dettagli di 5 prodotti (nome, prezzo, quantità).
+   2.    Trovi e stampi il nome del prodotto più costoso.
+
